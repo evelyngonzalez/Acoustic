@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A80723AB20D999BD008F12EA /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80723AA20D999BD008F12EA /* Restaurant.swift */; };
+		A80723B520D9B123008F12EA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80723B420D9B123008F12EA /* Event.swift */; };
+		A80723B720D9B964008F12EA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80723B620D9B964008F12EA /* Location.swift */; };
+		A80723B920DAB606008F12EA /* OportunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80723B820DAB606008F12EA /* OportunityViewController.swift */; };
+		A80723BB20DAB6FD008F12EA /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80723BA20DAB6FD008F12EA /* RestaurantViewController.swift */; };
+		A80723C120DAB996008F12EA /* OportunityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80723C020DAB996008F12EA /* OportunityTableViewCell.swift */; };
+		A8547C8220CF573E009702F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8547C8120CF573E009702F3 /* AppDelegate.swift */; };
+		A8547C8420CF573E009702F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8547C8320CF573E009702F3 /* ViewController.swift */; };
+		A8547C8720CF573E009702F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8547C8520CF573E009702F3 /* Main.storyboard */; };
+		A8547C8920CF5744009702F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8547C8820CF5744009702F3 /* Assets.xcassets */; };
+		A8547C8C20CF5744009702F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8547C8A20CF5744009702F3 /* LaunchScreen.storyboard */; };
+		A8547C9420CF6C8C009702F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8547C9320CF6C8C009702F3 /* GoogleService-Info.plist */; };
+		A8547C9620CF730D009702F3 /* Musician.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8547C9520CF730D009702F3 /* Musician.swift */; };
+		A88858ED20DB3607003ED2EE /* RestourantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88858EC20DB3607003ED2EE /* RestourantCollectionViewCell.swift */; };
+		A88858F120DC6EAB003ED2EE /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88858F020DC6EAB003ED2EE /* Gallery.swift */; };
+		A8C2029620D1F2E200C3B9EC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2029520D1F2E200C3B9EC /* MapViewController.swift */; };
+		A8C2029820D1F32A00C3B9EC /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2029720D1F32A00C3B9EC /* DiaryViewController.swift */; };
+		A8C2029C20D1F76300C3B9EC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2029B20D1F76300C3B9EC /* ProfileViewController.swift */; };
+		A8C2029E20D1F78D00C3B9EC /* DailyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2029D20D1F78D00C3B9EC /* DailyTableViewCell.swift */; };
+		A8C202A620D86C0C00C3B9EC /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C202A520D86C0C00C3B9EC /* PhotoCollectionViewCell.swift */; };
+		BC8888E2BC1C9E333C8484A9 /* Pods_AppAcoustic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0378520857245E270054D0F7 /* Pods_AppAcoustic.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0378520857245E270054D0F7 /* Pods_AppAcoustic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppAcoustic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9857E740BCA19B33C8E90610 /* Pods-AppAcoustic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppAcoustic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppAcoustic/Pods-AppAcoustic.debug.xcconfig"; sourceTree = "<group>"; };
+		A80723AA20D999BD008F12EA /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		A80723B420D9B123008F12EA /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		A80723B620D9B964008F12EA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A80723B820DAB606008F12EA /* OportunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OportunityViewController.swift; sourceTree = "<group>"; };
+		A80723BA20DAB6FD008F12EA /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		A80723C020DAB996008F12EA /* OportunityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OportunityTableViewCell.swift; sourceTree = "<group>"; };
+		A8547C7E20CF573E009702F3 /* AppAcoustic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAcoustic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8547C8120CF573E009702F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A8547C8320CF573E009702F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8547C8620CF573E009702F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8547C8820CF5744009702F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8547C8B20CF5744009702F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8547C8D20CF5744009702F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8547C9320CF6C8C009702F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A8547C9520CF730D009702F3 /* Musician.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musician.swift; sourceTree = "<group>"; };
+		A88858EC20DB3607003ED2EE /* RestourantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestourantCollectionViewCell.swift; sourceTree = "<group>"; };
+		A88858F020DC6EAB003ED2EE /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
+		A8C2029520D1F2E200C3B9EC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A8C2029720D1F32A00C3B9EC /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		A8C2029B20D1F76300C3B9EC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A8C2029D20D1F78D00C3B9EC /* DailyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTableViewCell.swift; sourceTree = "<group>"; };
+		A8C202A520D86C0C00C3B9EC /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		CB1A41246DDEBB36667AEB90 /* Pods-AppAcoustic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppAcoustic.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppAcoustic/Pods-AppAcoustic.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8547C7B20CF573E009702F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8888E2BC1C9E333C8484A9 /* Pods_AppAcoustic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		972383DDC971701458AC00C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0378520857245E270054D0F7 /* Pods_AppAcoustic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8547C7520CF573E009702F3 = {
+			isa = PBXGroup;
+			children = (
+				A8547C8020CF573E009702F3 /* AppAcoustic */,
+				A8547C7F20CF573E009702F3 /* Products */,
+				CB762753547126022FCAB85D /* Pods */,
+				972383DDC971701458AC00C0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A8547C7F20CF573E009702F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8547C7E20CF573E009702F3 /* AppAcoustic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8547C8020CF573E009702F3 /* AppAcoustic */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2029D20D1F78D00C3B9EC /* DailyTableViewCell.swift */,
+				A8547C8120CF573E009702F3 /* AppDelegate.swift */,
+				A8547C8320CF573E009702F3 /* ViewController.swift */,
+				A8547C8520CF573E009702F3 /* Main.storyboard */,
+				A88858EC20DB3607003ED2EE /* RestourantCollectionViewCell.swift */,
+				A80723BA20DAB6FD008F12EA /* RestaurantViewController.swift */,
+				A8C202A520D86C0C00C3B9EC /* PhotoCollectionViewCell.swift */,
+				A8C2029B20D1F76300C3B9EC /* ProfileViewController.swift */,
+				A8C2029720D1F32A00C3B9EC /* DiaryViewController.swift */,
+				A8C2029520D1F2E200C3B9EC /* MapViewController.swift */,
+				A8547C9520CF730D009702F3 /* Musician.swift */,
+				A80723AA20D999BD008F12EA /* Restaurant.swift */,
+				A8547C8820CF5744009702F3 /* Assets.xcassets */,
+				A8547C8A20CF5744009702F3 /* LaunchScreen.storyboard */,
+				A8547C8D20CF5744009702F3 /* Info.plist */,
+				A8547C9320CF6C8C009702F3 /* GoogleService-Info.plist */,
+				A80723B420D9B123008F12EA /* Event.swift */,
+				A80723B620D9B964008F12EA /* Location.swift */,
+				A80723B820DAB606008F12EA /* OportunityViewController.swift */,
+				A80723C020DAB996008F12EA /* OportunityTableViewCell.swift */,
+				A88858F020DC6EAB003ED2EE /* Gallery.swift */,
+			);
+			path = AppAcoustic;
+			sourceTree = "<group>";
+		};
+		CB762753547126022FCAB85D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9857E740BCA19B33C8E90610 /* Pods-AppAcoustic.debug.xcconfig */,
+				CB1A41246DDEBB36667AEB90 /* Pods-AppAcoustic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8547C7D20CF573E009702F3 /* AppAcoustic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8547C9020CF5744009702F3 /* Build configuration list for PBXNativeTarget "AppAcoustic" */;
+			buildPhases = (
+				265474F7E67A192D9463DDF2 /* [CP] Check Pods Manifest.lock */,
+				A8547C7A20CF573E009702F3 /* Sources */,
+				A8547C7B20CF573E009702F3 /* Frameworks */,
+				A8547C7C20CF573E009702F3 /* Resources */,
+				538F5C7E531257CDEE34DF4E /* [CP] Embed Pods Frameworks */,
+				E1D8C4B170EF8073C5E54E0F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppAcoustic;
+			productName = AppAcoustic;
+			productReference = A8547C7E20CF573E009702F3 /* AppAcoustic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8547C7620CF573E009702F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Evelyn;
+				TargetAttributes = {
+					A8547C7D20CF573E009702F3 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A8547C7920CF573E009702F3 /* Build configuration list for PBXProject "AppAcoustic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8547C7520CF573E009702F3;
+			productRefGroup = A8547C7F20CF573E009702F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8547C7D20CF573E009702F3 /* AppAcoustic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8547C7C20CF573E009702F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8547C8C20CF5744009702F3 /* LaunchScreen.storyboard in Resources */,
+				A8547C9420CF6C8C009702F3 /* GoogleService-Info.plist in Resources */,
+				A8547C8920CF5744009702F3 /* Assets.xcassets in Resources */,
+				A8547C8720CF573E009702F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		265474F7E67A192D9463DDF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppAcoustic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		538F5C7E531257CDEE34DF4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AppAcoustic/Pods-AppAcoustic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppAcoustic/Pods-AppAcoustic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1D8C4B170EF8073C5E54E0F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AppAcoustic/Pods-AppAcoustic-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppAcoustic/Pods-AppAcoustic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8547C7A20CF573E009702F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8547C8420CF573E009702F3 /* ViewController.swift in Sources */,
+				A80723B720D9B964008F12EA /* Location.swift in Sources */,
+				A8C202A620D86C0C00C3B9EC /* PhotoCollectionViewCell.swift in Sources */,
+				A88858ED20DB3607003ED2EE /* RestourantCollectionViewCell.swift in Sources */,
+				A8C2029E20D1F78D00C3B9EC /* DailyTableViewCell.swift in Sources */,
+				A80723C120DAB996008F12EA /* OportunityTableViewCell.swift in Sources */,
+				A8C2029820D1F32A00C3B9EC /* DiaryViewController.swift in Sources */,
+				A80723B920DAB606008F12EA /* OportunityViewController.swift in Sources */,
+				A88858F120DC6EAB003ED2EE /* Gallery.swift in Sources */,
+				A80723B520D9B123008F12EA /* Event.swift in Sources */,
+				A8547C8220CF573E009702F3 /* AppDelegate.swift in Sources */,
+				A8C2029C20D1F76300C3B9EC /* ProfileViewController.swift in Sources */,
+				A8547C9620CF730D009702F3 /* Musician.swift in Sources */,
+				A8C2029620D1F2E200C3B9EC /* MapViewController.swift in Sources */,
+				A80723AB20D999BD008F12EA /* Restaurant.swift in Sources */,
+				A80723BB20DAB6FD008F12EA /* RestaurantViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A8547C8520CF573E009702F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8547C8620CF573E009702F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A8547C8A20CF5744009702F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8547C8B20CF5744009702F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8547C8E20CF5744009702F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8547C8F20CF5744009702F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8547C9120CF5744009702F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9857E740BCA19B33C8E90610 /* Pods-AppAcoustic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppAcoustic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = UCU.AppAcoustic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8547C9220CF5744009702F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB1A41246DDEBB36667AEB90 /* Pods-AppAcoustic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppAcoustic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = UCU.AppAcoustic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8547C7920CF573E009702F3 /* Build configuration list for PBXProject "AppAcoustic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8547C8E20CF5744009702F3 /* Debug */,
+				A8547C8F20CF5744009702F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8547C9020CF5744009702F3 /* Build configuration list for PBXNativeTarget "AppAcoustic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8547C9120CF5744009702F3 /* Debug */,
+				A8547C9220CF5744009702F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8547C7620CF573E009702F3 /* Project object */;
+}

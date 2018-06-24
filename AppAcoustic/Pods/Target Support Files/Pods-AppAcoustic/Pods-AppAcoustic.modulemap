@@ -1,0 +1,6 @@
+framework module Pods_AppAcoustic {
+  umbrella header "Pods-AppAcoustic-umbrella.h"
+
+  export *
+  module * { export * }
+}
