@@ -16,7 +16,7 @@ class OportunityViewController: UIViewController,UITableViewDelegate, UITableVie
     
     
 
-   // @IBOutlet weak var imageOportunity: UIImageView!
+    @IBOutlet weak var imageOportunity: UIImageView!
    // @IBOutlet weak var oportunityLabel: UILabel!
     @IBOutlet weak var oportunityTable: UITableView!
    // @IBOutlet weak var buttonSignOut: UIButton!
@@ -39,6 +39,7 @@ class OportunityViewController: UIViewController,UITableViewDelegate, UITableVie
         Alamofire.request(url).responseArray {(response: DataResponse<[Restaurant]>) in
             self.restourants = response.result.value!
         self.oportunityTable.reloadData()
+        
         // Do any additional setup after loading the view.
     }
     }
@@ -56,6 +57,8 @@ class OportunityViewController: UIViewController,UITableViewDelegate, UITableVie
         cell?.restaurantImage.image = UIImage(data: data!)*/
         let imageURL = URL(string: restoran.image!)
         cell?.restaurantImage.sd_setImage(with: imageURL)
+        cell?.restaurantImage.layer.cornerRadius = (cell?.restaurantImage.frame.size.width)! / 2;
+        cell?.restaurantImage.clipsToBounds = true;
         cell?.addressLabel.text = restoran.address
         cell?.nameLabel.text = restoran.name
         cell?.cityLabel.text = restoran.city
@@ -74,6 +77,7 @@ class OportunityViewController: UIViewController,UITableViewDelegate, UITableVie
        self.navigationController?.pushViewController(vController!, animated: true)
         vController?.restaurant = restoran
     }
+   
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

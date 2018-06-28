@@ -13,9 +13,7 @@ import GoogleSignIn
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
    
-
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -38,18 +36,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
-        // ...
         if error != nil {
-            // ...
             return
         }
         
         guard let authentication = user.authentication else { return }
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                        accessToken: authentication.accessToken)
-        // ...
-//        window?.rootViewController?.performSegue(withIdentifier: "tabBarIdentifier", sender: nil)
-        
         if let navigationController = self.window?.rootViewController as? UINavigationController {
             if navigationController.viewControllers.count > 0, let viewController = navigationController.viewControllers[0] as? ViewController {
                 viewController.performSegue(withIdentifier: "tabBarIdentifier", sender: nil)
@@ -58,8 +51,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
-        // Perform any operations when the user disconnects from app here.
-        // ...
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

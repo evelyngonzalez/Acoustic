@@ -99,7 +99,6 @@
 		A8547C8020CF573E009702F3 /* AppAcoustic */ = {
 			isa = PBXGroup;
 			children = (
-				A8C2029D20D1F78D00C3B9EC /* DailyTableViewCell.swift */,
 				A8547C8120CF573E009702F3 /* AppDelegate.swift */,
 				A8547C8320CF573E009702F3 /* ViewController.swift */,
 				A8547C8520CF573E009702F3 /* Main.storyboard */,
@@ -108,6 +107,7 @@
 				A8C202A520D86C0C00C3B9EC /* PhotoCollectionViewCell.swift */,
 				A8C2029B20D1F76300C3B9EC /* ProfileViewController.swift */,
 				A8C2029720D1F32A00C3B9EC /* DiaryViewController.swift */,
+				A8C2029D20D1F78D00C3B9EC /* DailyTableViewCell.swift */,
 				A8C2029520D1F2E200C3B9EC /* MapViewController.swift */,
 				A8547C9520CF730D009702F3 /* Musician.swift */,
 				A80723AA20D999BD008F12EA /* Restaurant.swift */,

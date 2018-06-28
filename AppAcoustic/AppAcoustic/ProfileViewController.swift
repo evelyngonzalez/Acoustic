@@ -42,6 +42,8 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
         GIDSignIn.sharedInstance().signOut()
         let vController = storyboard?.instantiateViewController(withIdentifier: "ViewControllerid") as? ViewController
         self.navigationController?.pushViewController(vController!, animated: true)
+        self.tabBarController?.tabBar.isHidden = true
+
     }
     
     @IBAction func editButtonAction(_ sender: Any) {
