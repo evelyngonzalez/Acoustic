@@ -19,13 +19,13 @@ class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var nextEventLabel: UILabel!
     @IBOutlet weak var calendarImage: UIImageView!
     @IBOutlet weak var tableEvent: UITableView!
-    @IBOutlet weak var buttonSignOut: UIButton!
-    @IBAction func buttonSignOutAction(_ sender: Any) {
+    //@IBOutlet weak var buttonSignOut: UIButton!
+    /*@IBAction func buttonSignOutAction(_ sender: Any) {
         GIDSignIn.sharedInstance().signOut()
         let vController = storyboard?.instantiateViewController(withIdentifier: "ViewControllerid") as? ViewController
         self.navigationController?.pushViewController(vController!, animated: true)
 
-    }
+    }*/
     
     var events:[Event] = []
     var musician:Musician = Musician(name: "x",image: "https://icdn2.digitaltrends.com/image/atm-hack-720x720.jpg",age:"1",city: "x",genre: "x",instrument: "x",email: "x", photo:[])

@@ -16,16 +16,16 @@ class OportunityViewController: UIViewController,UITableViewDelegate, UITableVie
     
     
 
-    @IBOutlet weak var imageOportunity: UIImageView!
-    @IBOutlet weak var oportunityLabel: UILabel!
+   // @IBOutlet weak var imageOportunity: UIImageView!
+   // @IBOutlet weak var oportunityLabel: UILabel!
     @IBOutlet weak var oportunityTable: UITableView!
-    @IBOutlet weak var buttonSignOut: UIButton!
-    @IBAction func buttonSignOutAction(_ sender: Any) {
+   // @IBOutlet weak var buttonSignOut: UIButton!
+    /*@IBAction func buttonSignOutAction(_ sender: Any) {
         GIDSignIn.sharedInstance().signOut()
         let vController = storyboard?.instantiateViewController(withIdentifier: "ViewControllerid") as? ViewController
         self.navigationController?.pushViewController(vController!, animated: true)
 
-    }
+    }*/
     
     var restourants:[Restaurant] = []
 
@@ -58,6 +58,7 @@ class OportunityViewController: UIViewController,UITableViewDelegate, UITableVie
         cell?.restaurantImage.sd_setImage(with: imageURL)
         cell?.addressLabel.text = restoran.address
         cell?.nameLabel.text = restoran.name
+        cell?.cityLabel.text = restoran.city
         return cell!
         
     }

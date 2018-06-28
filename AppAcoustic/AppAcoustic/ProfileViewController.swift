@@ -26,7 +26,7 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
     @IBOutlet weak var instrumentTextField: UITextField!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var editButton: UIButton!
+    //@IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var deletePhotoButton: UIButton!
     @IBOutlet weak var informationTitleLabel: UILabel!
@@ -34,6 +34,7 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
     @IBOutlet weak var upPhotoButton: UIButton!
     @IBOutlet weak var photoLabel: UILabel!
     @IBOutlet weak var buttonSignOut: UIButton!
+    //@IBOutlet weak var editButton: UIBarButtonItem!
     
     var activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView()
     
@@ -46,7 +47,7 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
     @IBAction func editButtonAction(_ sender: Any) {
         /*let alert = UIAlertController(title: "x", message: "x", preferredStyle: UIAlertControllerStyle.alert)*/
         self.enableEditText ()
-        editButton.isHidden = true
+      //  editButton.isHidden = true
         saveButton.isHidden = false
         upPhotoButton.isHidden = false
         deletePhotoButton.isHidden = false
@@ -89,7 +90,7 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
         Alamofire.request(urlRequest).response { _ in
             self.stopActivityIndicator()
             
-            self.editButton.isHidden = false
+           // self.editButton.isHidden = false
             self.saveButton.isHidden = true
             self.upPhotoButton.isHidden = true
             self.deletePhotoButton.isHidden = true

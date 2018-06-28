@@ -13,6 +13,7 @@ class OportunityTableViewCell: UITableViewCell {
     @IBOutlet weak var restaurantImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var cityLabel: UILabel!
     
     
     
