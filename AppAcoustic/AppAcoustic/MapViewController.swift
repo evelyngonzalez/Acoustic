@@ -11,11 +11,13 @@ import MapKit
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
-
+    //Outlets
     @IBOutlet weak var mapKit: MKMapView!
     
     var event : Event!
 
+    
+    //Load point annotation with event location
     override func viewDidLoad() {
         super.viewDidLoad()
         

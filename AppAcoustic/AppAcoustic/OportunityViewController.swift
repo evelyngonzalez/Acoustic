@@ -14,19 +14,10 @@ import SDWebImage
 
 class OportunityViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
-    
-
+    //Outlets
     @IBOutlet weak var imageOportunity: UIImageView!
-   // @IBOutlet weak var oportunityLabel: UILabel!
     @IBOutlet weak var oportunityTable: UITableView!
-   // @IBOutlet weak var buttonSignOut: UIButton!
-    /*@IBAction func buttonSignOutAction(_ sender: Any) {
-        GIDSignIn.sharedInstance().signOut()
-        let vController = storyboard?.instantiateViewController(withIdentifier: "ViewControllerid") as? ViewController
-        self.navigationController?.pushViewController(vController!, animated: true)
 
-    }*/
-    
     var restourants:[Restaurant] = []
 
     var rest: Restaurant = Restaurant (name: "x", image: "", city:"x", address: "x", day: "x", time: "x", payment: "x", phone: "x", gallery:[])
@@ -39,22 +30,19 @@ class OportunityViewController: UIViewController,UITableViewDelegate, UITableVie
         Alamofire.request(url).responseArray {(response: DataResponse<[Restaurant]>) in
             self.restourants = response.result.value!
         self.oportunityTable.reloadData()
-        
-        // Do any additional setup after loading the view.
-    }
+        }
     }
 
-    
+    //set count number of rows in restaurant table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restourants.count
     }
     
+    
+    //set information in cell to oportunity table
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = oportunityTable.dequeueReusableCell(withIdentifier: "oportunitycellid", for:indexPath) as? OportunityTableViewCell
         let restoran = self.restourants[indexPath.row]
-        /*let imageURL = URL(string: restoran.image!)
-        let data = try? Data(contentsOf: imageURL!)
-        cell?.restaurantImage.image = UIImage(data: data!)*/
         let imageURL = URL(string: restoran.image!)
         cell?.restaurantImage.sd_setImage(with: imageURL)
         cell?.restaurantImage.layer.cornerRadius = (cell?.restaurantImage.frame.size.width)! / 2;
@@ -66,10 +54,12 @@ class OportunityViewController: UIViewController,UITableViewDelegate, UITableVie
         
     }
     
+    //set configure height to oportunity table
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 85
     }
     
+    //pass information to restaurant view controller when selected row
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         oportunityTable.deselectRow(at: indexPath, animated: true)
         let restoran = restourants[indexPath.row]

@@ -26,7 +26,6 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
     @IBOutlet weak var instrumentTextField: UITextField!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
-    //@IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var deletePhotoButton: UIButton!
     @IBOutlet weak var informationTitleLabel: UILabel!
@@ -34,47 +33,45 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
     @IBOutlet weak var upPhotoButton: UIButton!
     @IBOutlet weak var photoLabel: UILabel!
     @IBOutlet weak var buttonSignOut: UIButton!
-    //@IBOutlet weak var editButton: UIBarButtonItem!
     
     var activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView()
     
+    //Button sign out. Redirect to View Controller.
     @IBAction func buttonSignOutAction(_ sender: Any) {
         GIDSignIn.sharedInstance().signOut()
         let vController = storyboard?.instantiateViewController(withIdentifier: "ViewControllerid") as? ViewController
         self.navigationController?.pushViewController(vController!, animated: true)
         self.tabBarController?.tabBar.isHidden = true
-
     }
     
+    //Edit button.
     @IBAction func editButtonAction(_ sender: Any) {
-        /*let alert = UIAlertController(title: "x", message: "x", preferredStyle: UIAlertControllerStyle.alert)*/
         self.enableEditText ()
-      //  editButton.isHidden = true
         saveButton.isHidden = false
         upPhotoButton.isHidden = false
         deletePhotoButton.isHidden = false
-        
     }
     
+    //Delete photo button. Set list photos at null
     @IBAction func deletePhotoButtonAction(_ sender: Any) {
         self.photos = []
         self.musician.photo = []
         collectionPhotos.reloadData()
     }
     
+    
     @IBAction func saveButtonAction(_ sender: Any) {
         self.disableEditText()
-        //guardar los cambios en firebase
-
-        self.startActivityIndicator()
         
+        //save changes on Firebase
+        self.startActivityIndicator()
         self.musician.age = self.ageTextField.text
         self.musician.city = self.cityTextField.text
         self.musician.genre = self.genreTextField.text
         self.musician.instrument = self.instrumentTextField.text
         self.musician.email = self.emailTextField.text
         
-    
+        //json with musician information
         let jsonData = self.musician.toJSON()
 
         let googleUserId : String = GIDSignIn.sharedInstance().clientID!.replacingOccurrences(of: ".", with:"")
@@ -85,19 +82,16 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
         do {
             urlRequest.httpBody = try JSONSerialization.data(withJSONObject: jsonData, options: [])
         } catch {
-            // No-op
         }
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        
         Alamofire.request(urlRequest).response { _ in
             self.stopActivityIndicator()
-            
-           // self.editButton.isHidden = false
             self.saveButton.isHidden = true
             self.upPhotoButton.isHidden = true
             self.deletePhotoButton.isHidden = true
         }
     }
+    
     
     @IBAction func upPhotoAction(_ sender: Any) {
         let controller = UIImagePickerController()
@@ -110,12 +104,12 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
     var musician:Musician = Musician(name: "x",image: "https://icdn2.digitaltrends.com/image/atm-hack-720x720.jpg",age:"1",city: "x",genre: "x",instrument: "x",email: "x", photo:[])
     var photos:[UIImage] = []
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionPhotos.delegate = self
         collectionPhotos.dataSource = self
         collectionPhotos.isPagingEnabled = false
-        
         saveButton.isHidden = true
         upPhotoButton.isHidden = true
         deletePhotoButton.isHidden = true
@@ -128,6 +122,7 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
         self.activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
         view.addSubview(self.activityIndicator)
 
+        //quit border to textfield
         self.ageTextField.borderStyle = UITextBorderStyle.none
         self.cityTextField.borderStyle = UITextBorderStyle.none
         self.emailTextField.borderStyle = UITextBorderStyle.none
@@ -135,6 +130,8 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
         self.genreTextField.borderStyle = UITextBorderStyle.none
     }
     
+    
+    //Activity indicator
     func startActivityIndicator(){
         self.activityIndicator.startAnimating()
     }
@@ -143,9 +140,12 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
         self.activityIndicator.stopAnimating()
     }
     
+    
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
+    
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
@@ -158,10 +158,13 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
         dismiss(animated: true, completion: nil)
     }
     
+    
+    //set number of items in photo collection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.photos.count
     }
     
+    //photos
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "idphoto", for: indexPath) as! PhotoCollectionViewCell
         cell.layer.masksToBounds = true
@@ -170,6 +173,8 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
         return cell
     }
     
+    
+    //Load information to musician
     func loadData (){
         self.startActivityIndicator()
         let googleUserId : String = GIDSignIn.sharedInstance().clientID!.replacingOccurrences(of: ".", with:"")
@@ -179,8 +184,6 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
                 self.musician = response.result.value!
                     self.name.text = self.musician.name
                     let urlImage = URL(string: self.musician.image!)
-                   // let data = try? Data(contentsOf: urlImage!)
-                   // self.imageProfile.image = UIImage(data: data!)
                     self.imageProfile.sd_setImage(with: urlImage)
                     self.imageProfile.layer.cornerRadius = self.imageProfile.frame.size.width / 2;
                     self.imageProfile.clipsToBounds = true;
@@ -202,6 +205,7 @@ class ProfileViewController: UIViewController,UICollectionViewDelegate, UICollec
             self.stopActivityIndicator()
         }
     }
+    
     
     func disableEditText (){
         self.emailTextField.isUserInteractionEnabled = false

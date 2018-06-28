@@ -18,15 +18,15 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Loging with Google
         GIDSignIn.sharedInstance().uiDelegate = self
+        
         //Hidde navigation bar
         self.navigationController?.isNavigationBarHidden = true
-
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
